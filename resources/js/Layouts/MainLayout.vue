@@ -1,5 +1,6 @@
 <template>
     <div class="h-full bg-white dark:bg-smoky-black text-smoky-black dark:text-white font-sans" :class="{ 'dark': darkMode }">
+<!--        Dark Mode Toggle Button -->
         <button @click="toggleDarkMode" class="fixed top-4 right-4 z-50 p-2 bg-gray-200 dark:bg-gray-800 rounded-full">
             <svg v-if="!darkMode" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
@@ -9,8 +10,23 @@
             </svg>
         </button>
 
+<!-- Navigation -->
         <Header />
+        <!-- Navigation -->
+        <nav class="bg-gray-100 dark:bg-gray-800 py-4">
+            <div class="container mx-auto px-4">
+                <ul class="flex justify-center space-x-6">
+                    <li><a @click.prevent="scrollToSection('about')" href="#about" class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">About</a></li>
+                    <li><a @click.prevent="scrollToSection('services')" href="#services" class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">Services</a></li>
+                    <li><a @click.prevent="scrollToSection('partnerships')" href="#partnerships" class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">Partnerships</a></li>
+                    <li><a @click.prevent="scrollToSection('music')" href="#music" class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">Music Services</a></li>
+                    <li><a @click.prevent="scrollToSection('contact')" href="#contact" class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
+
+        <!--        Main content -->
         <slot></slot>
 
         <Footer />
@@ -35,9 +51,18 @@ export default {
             darkMode.value = !darkMode.value
         }
 
+        const scrollToSection = (sectionId) => {
+            const element = document.getElementById(sectionId)
+            if (element) {
+                element.scrollIntoView({behavior: 'smooth'})
+            }
+
+        }
+
         return {
             darkMode,
-            toggleDarkMode
+            toggleDarkMode,
+            scrollToSection
         }
     }
 }
