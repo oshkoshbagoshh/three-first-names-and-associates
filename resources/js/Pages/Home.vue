@@ -35,6 +35,8 @@
             <h2 class="text-2xl font-rubik font-semibold text-indigo dark:text-blue-violet mb-4">Contact Us</h2>
             <p>Ready to elevate your CTV advertising strategy? Get in touch with us today.</p>
             <!-- Add your contact form or contact information here -->
+<!--            TODO: Contact Form with Calendly  -->
+            <CalendlyWidget url="https://calendly.com/ajavadi202/31min" height="700px" />
         </section>
     </main>
 </template>
@@ -42,9 +44,11 @@
 <script>
 import { defineComponent } from 'vue'
 import { ChartBarIcon, CodeBracketIcon, ShieldCheckIcon } from '@heroicons/vue/24/outline'
+import CalendlyWidget from "@/Components/CalendlyWidget.vue";
 
 export default defineComponent({
     name: 'Home',
+    components: {CalendlyWidget},
     setup() {
         const services = [
             {
