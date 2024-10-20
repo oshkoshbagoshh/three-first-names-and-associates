@@ -10,15 +10,16 @@
         </section>
         <hr>
         <!--  HOLDER FOR SERVICES       -->
+        <div>
+            <ServicesSection />
+        </div>
         <hr>
-
         <section id="faq" class="mb-8">
             <div>
                 <FaqSection/>
             </div>
         </section>
-
-
+        <hr>
         <section id="about" class="mb-8">
             <h2 class="text-2xl font-rubik font-semibold text-indigo dark:text-blue-violet mb-4">About Us</h2>
             <p>With nearly a decade of experience in media & advertising, Three First Names & Associates is a consulting
@@ -75,10 +76,11 @@ import CalendlyWidget from "@/Components/CalendlyWidget.vue";
 import AboutTfnMusicServices from "@/Components/AboutTfnMusicServices.vue";
 import AboutTfnMediaServices from "@/Components/AboutTfnMediaServices.vue";
 import FaqSection from "@/Components/FaqSection.vue";
+import ServicesSection from "@/Components/ServicesSection.vue";
 
 export default defineComponent({
     name: 'Home',
-    components: {FaqSection, AboutTfnMediaServices, AboutTfnMusicServices, CalendlyWidget},
+    components: {ServicesSection, FaqSection, AboutTfnMediaServices, AboutTfnMusicServices, CalendlyWidget},
     setup() {
         const services = [
             {
