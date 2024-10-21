@@ -1,8 +1,36 @@
 # Threes Llamos Unos (WIP)
 
+# Threes Llamos Unos (WIP)
+
+## Table of Contents
+- [Demo](#demo)
+- [General Outline](#general-outline)
+  - [1. Laravel Backend](#1-laravel-backend)
+    - [a. API Development](#a-api-development)
+    - [b. Database](#b-database)
+    - [c. Caching](#c-caching)
+  - [2. Vue.js Frontend](#2-vuejs-frontend)
+    - [a. Component Structure](#a-component-structure)
+    - [b. State Management](#b-state-management)
+    - [c. Routing](#c-routing)
+  - [3. Inertia.js Integration](#3-inertiajs-integration)
+    - [a. Page Components](#a-page-components)
+    - [b. Data Passing](#b-data-passing)
+  - [4. Tailwind CSS](#4-tailwind-css)
+    - [a. Configuration](#a-configuration)
+
 ## Demo
 [Demo](https://vimeo.com/1021567307/612ccb70e2?share=copy)
 
+## General Outline
+...
+
+
+## Demo
+[Demo](https://vimeo.com/1021567307/612ccb70e2?share=copy)
+
+---
+## General Outline 
 
 Thank you for providing information about the GitHub repository for the "Tres Llamos Unos" project. It seems like an interesting Laravel-based web application that's in its early stages of development. Given your preferences and interests, I'd be happy to provide some insights and suggestions for this project. 
 
