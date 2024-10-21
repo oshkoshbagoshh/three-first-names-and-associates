@@ -11,7 +11,7 @@
         <hr>
         <!--  HOLDER FOR SERVICES       -->
         <div>
-            <ServicesSection />
+            <ServicesSection/>
         </div>
         <hr>
         <section id="faq" class="mb-8">
@@ -22,13 +22,13 @@
         <hr>
         <section id="aboutnathan" class="mb-8">
             <div>
-                <AboutNathan />
+                <AboutNathan/>
             </div>
         </section>
         <hr>
         <section id="testimonials" class="mb-8">
             <div>
-                <TestimonialsSectionComponent />
+                <TestimonialsSectionComponent/>
             </div>
         </section>
         <hr>
@@ -97,7 +97,8 @@ export default defineComponent({
     name: 'Home',
     components: {
         TestimonialsSectionComponent,
-        AboutNathan, ServicesSection, FaqSection, AboutTfnMediaServices, AboutTfnMusicServices, CalendlyWidget},
+        AboutNathan, ServicesSection, FaqSection, AboutTfnMediaServices, AboutTfnMusicServices, CalendlyWidget
+    },
     setup() {
         const services = [
             {
