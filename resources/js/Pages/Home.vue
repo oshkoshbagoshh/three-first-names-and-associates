@@ -20,6 +20,19 @@
             </div>
         </section>
         <hr>
+        <section id="aboutnathan" class="mb-8">
+            <div>
+                <AboutNathan />
+            </div>
+        </section>
+        <hr>
+        <section id="testimonials" class="mb-8">
+            <div>
+                <TestimonialsSectionComponent />
+            </div>
+        </section>
+        <hr>
+
         <section id="about" class="mb-8">
             <h2 class="text-2xl font-rubik font-semibold text-indigo dark:text-blue-violet mb-4">About Us</h2>
             <p>With nearly a decade of experience in media & advertising, Three First Names & Associates is a consulting
@@ -77,10 +90,14 @@ import AboutTfnMusicServices from "@/Components/AboutTfnMusicServices.vue";
 import AboutTfnMediaServices from "@/Components/AboutTfnMediaServices.vue";
 import FaqSection from "@/Components/FaqSection.vue";
 import ServicesSection from "@/Components/ServicesSection.vue";
+import AboutNathan from "@/Components/AboutNathan.vue";
+import TestimonialsSectionComponent from "@/Components/TestimonialsSectionComponent.vue";
 
 export default defineComponent({
     name: 'Home',
-    components: {ServicesSection, FaqSection, AboutTfnMediaServices, AboutTfnMusicServices, CalendlyWidget},
+    components: {
+        TestimonialsSectionComponent,
+        AboutNathan, ServicesSection, FaqSection, AboutTfnMediaServices, AboutTfnMusicServices, CalendlyWidget},
     setup() {
         const services = [
             {
