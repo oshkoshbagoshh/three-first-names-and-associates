@@ -29,7 +29,7 @@ Route::get('/privacy-policy', function () {
 });
 
 // Terms of Service Page
-Route::get('/terms-of-service', function () {
+Route::get('/terms-and-conditions', function () {
     return Inertia::render('TermsAndConditions');
 });
 

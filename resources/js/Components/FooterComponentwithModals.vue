@@ -44,7 +44,7 @@
       <div class="text-gray-700">
         <h2 class="text-xl font-semibold mb-2">1. Introduction</h2>
         <p class="mb-4">This Privacy Policy explains how Three First Names & Associates collects, uses, and protects your personal information.</p>
-        
+
         <h2 class="text-xl font-semibold mb-2">2. Information We Collect</h2>
         <ul class="list-disc list-inside mb-4">
           <li>Personal information you provide to us</li>
@@ -61,6 +61,8 @@
       </div>
     </Modal>
 
+<!--TODO: ADD TERMS AND CONDITIONS ETC -->
+<!--      TODO: HAVE SAM LOOK OVER LEGAL STUFF -->
     <Modal :show="showTerms" title="Terms and Conditions" @close="showTerms = false">
       <!-- Add Terms and Conditions content here -->
       <p class="text-gray-700">This is where you would put your Terms and Conditions content.</p>
