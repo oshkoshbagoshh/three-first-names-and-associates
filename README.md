@@ -23,13 +23,6 @@
 ## Demo
 [Demo](https://vimeo.com/1021567307/612ccb70e2?share=copy)
 
-## General Outline
-...
-
-
-## Demo
-[Demo](https://vimeo.com/1021567307/612ccb70e2?share=copy)
-
 ---
 ## General Outline 
 
