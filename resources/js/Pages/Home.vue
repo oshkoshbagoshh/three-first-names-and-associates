@@ -1,34 +1,36 @@
 <template>
     <main class="container mx-auto px-4 py-8">
+        <HeroSection />
         <hr>
+
         <section id="tfn-media-services" class="mb-8">
-            <AboutTfnMediaServices/>
+            <AboutTfnMediaServices />
         </section>
         <hr>
         <section id="tfn-music-services" class="mb-8">
-            <AboutTfnMusicServices/>
+            <AboutTfnMusicServices />
         </section>
         <hr>
         <!--  HOLDER FOR SERVICES       -->
         <div>
-            <ServicesSection/>
+            <ServicesSection />
         </div>
         <hr>
         <section id="faq" class="mb-8">
             <div>
-                <FaqSection/>
+                <FaqSection />
             </div>
         </section>
         <hr>
         <section id="aboutnathan" class="mb-8">
             <div>
-                <AboutNathan/>
+                <AboutNathan />
             </div>
         </section>
         <hr>
         <section id="testimonials" class="mb-8">
             <div>
-                <TestimonialsSectionComponent/>
+                <TestimonialsSectionComponent />
             </div>
         </section>
         <hr>
@@ -52,8 +54,8 @@
             <h2 class="text-2xl font-rubik font-semibold text-indigo dark:text-blue-violet mb-4">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div v-for="service in services" :key="service.title"
-                     class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
-                    <component :is="service.icon" class="w-8 h-8 text-indigo dark:text-blue-violet mb-4"/>
+                    class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+                    <component :is="service.icon" class="w-8 h-8 text-indigo dark:text-blue-violet mb-4" />
                     <h3 class="text-xl font-rubik font-semibold mb-2">{{ service.title }}</h3>
                     <p>{{ service.description }}</p>
                 </div>
@@ -77,29 +79,22 @@
         <section id="contact" class="text-center mt-8">
             <h2 class="text-2xl font-rubik font-semibold text-indigo dark:text-blue-violet mb-4">Contact Us</h2>
             <p>Ready to elevate your CTV advertising strategy? Get in touch with us today.</p>
-            <CalendlyWidget url="https://calendly.com/ajavadi202/31min" height="700px"/>
+            <CalendlyWidget url="https://calendly.com/ajavadi202/" height="700px" />
         </section>
     </main>
 </template>
 
-<script>
-import {defineComponent} from 'vue'
-import {ChartBarIcon, CodeBracketIcon, ShieldCheckIcon} from '@heroicons/vue/24/outline'
-import CalendlyWidget from "@/Components/CalendlyWidget.vue";
-import AboutTfnMusicServices from "@/Components/AboutTfnMusicServices.vue";
-import AboutTfnMediaServices from "@/Components/AboutTfnMediaServices.vue";
-import FaqSection from "@/Components/FaqSection.vue";
-import ServicesSection from "@/Components/ServicesSection.vue";
-import AboutNathan from "@/Components/AboutNathan.vue";
-import TestimonialsSectionComponent from "@/Components/TestimonialsSectionComponent.vue";
+<script setup>
+import HeroSection from '@/Components/HeroSection.vue'
+import AboutTfnMusicServices from "@/Components/AboutTfnMusicServices.vue"
+import AboutTfnMediaServices from "@/Components/AboutTfnMediaServices.vue"
+import FaqSection from "@/Components/FaqSection.vue"
+import ServicesSection from "@/Components/ServicesSection.vue"
+import AboutNathan from "@/Components/AboutNathan.vue"
+import TestimonialsSectionComponent from "@/Components/TestimonialsSectionComponent.vue"
+import { ChartBarIcon, CodeBracketIcon, ShieldCheckIcon } from '@heroicons/vue/24/outline'
+import CalendlyWidget from "@/Components/CalendlyWidget.vue"
 
-export default defineComponent({
-    name: 'Home',
-    components: {
-        TestimonialsSectionComponent,
-        AboutNathan, ServicesSection, FaqSection, AboutTfnMediaServices, AboutTfnMusicServices, CalendlyWidget
-    },
-    setup() {
         const services = [
             {
                 title: 'CTV Strategy Consulting',
@@ -117,12 +112,6 @@ export default defineComponent({
                 icon: ShieldCheckIcon
             }
         ]
-
-        return {
-            services
-        }
-    }
-})
 </script>
 
 <style scoped>

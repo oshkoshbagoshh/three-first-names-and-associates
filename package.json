@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "@heroicons/vue": "^2.1.5",
+        "gsap": "^3.12.5",
         "heroicons": "^2.1.5"
     }
 }

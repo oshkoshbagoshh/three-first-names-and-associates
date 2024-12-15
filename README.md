@@ -1,7 +1,5 @@
 # Threes Llamos Unos (WIP)
-
-## Description
-"Tres Llamos Unos" is a work-in-progress (WIP) web application built using the Laravel framework and Vue.js for the front-end. The project aims to create a comprehensive web application with a focus on backend development, front-end architecture, and integration with Inertia.js and Tailwind CSS.Main Function Points1. Laravel Backend:• API Development• Database Management• Caching Implementation2. Vue.js Frontend:• Component Structure• State Management• Routing3. Inertia.js Integration:• Page Components• Data Passing4. Tailwind CSS:• Configuration• Component StylingTechnology Stack• Laravel (Backend)• Vue.js (Frontend)• Inertia.js (SPA Integration)• Tailwind CSS (Styling)LicenseThe project does not specify a license, so the default copyright applies.
+Nathan's Business Website. 
 
 ## Table of Contents
 - [Demo](#demo)
@@ -26,9 +24,6 @@
 ---
 ## General Outline 
 
-Thank you for providing information about the GitHub repository for the "Tres Llamos Unos" project. It seems like an interesting Laravel-based web application that's in its early stages of development. Given your preferences and interests, I'd be happy to provide some insights and suggestions for this project. 
-
-Let's break down the key components and offer some guidance:
 
 1. Laravel Backend:
    Since you prefer comprehensive explanations for PHP development, including Laravel, here are some suggestions:
