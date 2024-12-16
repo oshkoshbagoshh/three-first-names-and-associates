@@ -22,6 +22,7 @@ Route::post('/submit-form',  [FormController::class, 'store'])->name('submit-for
 
 
 
+
 //TODO: Privacy Policy and Terms of Service - own page? if so then links back don't work ....
 // Privacy Policy Page
 Route::get('/privacy-policy', function () {
