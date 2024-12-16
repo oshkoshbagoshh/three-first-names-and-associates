@@ -25,6 +25,8 @@ Route::get('/about', function () {
 // Services Page
 Route::get('/services', function () {
     return Inertia::render('Services');
+});
+
 // Contact Page
 
 
