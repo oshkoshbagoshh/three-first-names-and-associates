@@ -66,3 +66,21 @@
         --ring: 263.4 70% 50.4%;
     }
 }
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Add after your existing styles */
+.smooth-scroll-section {
+    scroll-margin-top: 80px; /* Adjusts for fixed headers */
+    scroll-behavior: smooth;
+}
+
+/* Custom scroll timing */
+@media (prefers-reduced-motion: no-preference) {
+    .smooth-scroll-section {
+        scroll-behavior-duration: 1000ms;
+    }
+}

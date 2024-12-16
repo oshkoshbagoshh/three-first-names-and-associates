@@ -1,5 +1,22 @@
 <script setup>
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue';
+gsap.registerPlugin(ScrollTrigger)
 
+onMounted(() => {
+  gsap.from('.hero', {
+    opacity: 0,
+    duration: 1,
+    delay: 0.5,
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: '.hero',
+      start: 'top 80%',
+      end: 'bottom 20%',
+      scrub: true,
+    }
+  })
+})
 
 </script>
 <template>
