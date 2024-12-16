@@ -1,7 +1,6 @@
 <template>
     <main class="container mx-auto px-4 py-8">
         <HeroSection />
-        <hr>
 
         <section id="tfn-media-services" class="mb-8">
             <AboutTfnMediaServices />
