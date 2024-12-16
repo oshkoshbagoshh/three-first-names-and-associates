@@ -10,12 +10,16 @@ use Inertia\Inertia;
 
 // HOME ROUTE
 Route::get('/', function () {
-    return Inertia::render('Home2', [
+    return Inertia::render('Home', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('Register'),
     ]);
 });
 
+// Contact Page
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});
 // Fill out the contact form
 Route::post('/submit-form',  [FormController::class, 'store'])->name('submit-form');
 
