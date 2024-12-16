@@ -11,7 +11,7 @@ export default defineComponent({
     props: {
         url: {
             type: String,
-            default: 'https://calendly.com/ajavadi202/31min'
+            default: 'https://calendly.com/ajavadi202/'
         },
         height: {
             type: String,

@@ -1,26 +1,46 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-//Route::get('/', function () {
-//    return Inertia::render('Welcome', [
-//        'canLogin' => Route::has('login'),
-//        'canRegister' => Route::has('register'),
-//        'laravelVersion' => Application::VERSION,
-//        'phpVersion' => PHP_VERSION,
-//    ]);
-//});
+
+
+// HOME ROUTE
 Route::get('/', function () {
     return Inertia::render('Home', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('Register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
     ]);
 });
+
+
+// About Page
+Route::get('/about', function () {
+    return Inertia::render('About');
+});
+
+// Services Page
+Route::get('/services', function () {
+    return Inertia::render('Services');
+});
+
+// Contact Page
+
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});
+
+// Fill out the contact form
+
+Route::post('/submit-form',  [FormController::class, 'store'])->name('submit-form');
+
+
+
+
 
 //TODO: Privacy Policy and Terms of Service - own page? if so then links back don't work ....
 // Privacy Policy Page
@@ -38,6 +58,7 @@ Route::get('/terms-and-conditions', function () {
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

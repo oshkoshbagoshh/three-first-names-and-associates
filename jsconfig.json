@@ -2,9 +2,15 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@/*": ["resources/js/*"],
-            "ziggy-js": ["./vendor/tightenco/ziggy"]
-        }
+            "@/*": ["resources/js/*"]
+        },
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "allowJs": true
     },
-    "exclude": ["node_modules", "public"]
+    "exclude": ["node_modules", "public"],
+    "include": [
+        "resources/js/**/*.vue",
+        "resources/js/**/*.js"
+    ]
 }
