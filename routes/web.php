@@ -16,11 +16,24 @@ Route::get('/', function () {
     ]);
 });
 
+
+// About Page
+Route::get('/about', function () {
+    return Inertia::render('About');
+});
+
+// Services Page
+Route::get('/services', function () {
+    return Inertia::render('Services');
 // Contact Page
+
+
 Route::get('/contact', function () {
     return Inertia::render('Contact');
 });
+
 // Fill out the contact form
+
 Route::post('/submit-form',  [FormController::class, 'store'])->name('submit-form');
 
 
