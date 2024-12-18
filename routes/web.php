@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
-
 // HOME ROUTE
 Route::get('/', function () {
     return Inertia::render('Home', [
@@ -36,10 +35,7 @@ Route::get('/contact', function () {
 
 // Fill out the contact form
 
-Route::post('/submit-form',  [FormController::class, 'store'])->name('submit-form');
-
-
-
+Route::post('/submit-form', [FormController::class, 'store'])->name('submit-form');
 
 
 //TODO: Privacy Policy and Terms of Service - own page? if so then links back don't work ....
@@ -54,7 +50,6 @@ Route::get('/terms-and-conditions', function () {
 });
 
 
-
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -66,4 +61,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
