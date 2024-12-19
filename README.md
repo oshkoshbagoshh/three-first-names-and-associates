@@ -21,6 +21,9 @@ Nathan's Business Website.
 ## Demo
 [Demo](https://vimeo.com/1021567307/612ccb70e2?share=copy)
 
+## Mind Map
+
+
 ---
 ## General Outline 
 
