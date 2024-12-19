@@ -20,6 +20,8 @@
     },
     "dependencies": {
         "@heroicons/vue": "^2.1.5",
+        "bootstrap": "^5.3.3",
+        "bootstrap-vue": "^2.23.1",
         "gsap": "^3.12.5",
         "heroicons": "^2.1.5"
     }
