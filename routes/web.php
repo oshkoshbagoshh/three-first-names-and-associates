@@ -7,12 +7,18 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
+
 // HOME ROUTE
 Route::get('/', function () {
     return Inertia::render('Home', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('Register'),
     ]);
+});
+
+//  SANDBOX / PORTFOLIO VIEW
+Route::get('/sandbox', function () {
+    return Inertia::render('Sandbox');
 });
 
 
@@ -27,8 +33,6 @@ Route::get('/services', function () {
 });
 
 // Contact Page
-
-
 Route::get('/contact', function () {
     return Inertia::render('Contact');
 });
