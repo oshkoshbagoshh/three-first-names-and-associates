@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="{{asset('favicon/favicon.svg')}}"  />
 {{--    <link rel="shortcut icon" href="/favicon.ico" />--}}
 {{--    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />--}}
-{{--    <link rel="manifest" href="/site.webmanifest" />--}}
+    <link rel="manifest" href="/site.webmanifest" />
 
     <title>Three First Names & Associates - CTV Advertising Consulting</title>
     @vite('resources/js/app.js')<!DOCTYPE html>

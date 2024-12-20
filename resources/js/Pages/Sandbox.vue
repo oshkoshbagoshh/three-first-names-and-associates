@@ -1,48 +1,57 @@
 <template>
     <div id="app">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar is-light is-fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">AdCreative</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#">AdCreative</a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        @click="isNavActive = !isNavActive">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" :class="{ 'is-active': isNavActive }">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="#home">Home</a>
+                        <a class="navbar-item" href="#services">Services</a>
+                        <a class="navbar-item" href="#portfolio">Portfolio</a>
+                        <a class="navbar-item" href="#contact">Contact</a>
+                    </div>
                 </div>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <header id="home" class="hero-section vh-100 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1 class="display-4 fw-bold">Creative Solutions for Your Brand</h1>
-                        <p class="lead">Transform your brand with cutting-edge advertising strategies</p>
-                        <b-button variant="primary" size="lg" class="mt-3">Get Started</b-button>
+        <section id="home" class="hero is-fullheight hero-section">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <h1 class="title is-1 has-text-white">Creative Solutions for Your Brand</h1>
+                            <p class="subtitle is-3 has-text-white">Transform your brand with cutting-edge advertising
+                                strategies</p>
+                            <button class="button is-primary is-large">Get Started</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
-
+        </section>
 
         <!-- Services Section -->
-        <section id="services" class="py-5">
+        <section id="services" class="section">
             <div class="container">
-                <h2 class="text-center mb-5">Our Services</h2>
-                <div class="row g-4">
-                    <div class="col-md-4" v-for="service in services" :key="service.id">
-                        <div class="card h-100">
-                            <div class="card-body text-center">
-                                <i :class="service.icon + ' fa-3x mb-3'"></i>
-                                <h5 class="card-title">{{ service.title }}</h5>
-                                <p class="card-text">{{ service.description }}</p>
+                <h2 class="title is-2 has-text-centered mb-6">Our Services</h2>
+                <div class="columns is-multiline">
+                    <div class="column is-4" v-for="service in services" :key="service.id">
+                        <div class="card">
+                            <div class="card-content has-text-centered">
+                                <span class="icon is-large">
+                                    <i :class="service.icon + ' fa-3x'"></i>
+                                </span>
+                                <h5 class="title is-5 mt-4">{{ service.title }}</h5>
+                                <p>{{ service.description }}</p>
                             </div>
                         </div>
                     </div>
@@ -50,84 +59,89 @@
             </div>
         </section>
 
-
-
         <!-- Portfolio Section -->
-
-        <section id="portfolio" class="py-5 bg-light">
+        <section id="portfolio" class="section has-background-light">
             <div class="container">
-                <h2 class="text-center mb-5">Our Work</h2>
-                <b-row>
-                    <b-col md="4" v-for="project in portfolio" :key="project.id" class="mb-4">
-                        <b-card :img-src="project.image" :img-alt="project.title" img-top>
-                            <b-card-title>{{ project.title }}</b-card-title>
-                            <b-card-text>{{ project.description }}</b-card-text>
-                            <b-button variant="outline-primary">View Details</b-button>
-                        </b-card>
-                    </b-col>
-                </b-row>
-            </div>
-        </section>
-
-
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Contact Us</h2>
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <b-form @submit="onSubmit">
-                            <b-form-group label="Name">
-                                <b-form-input v-model="form.name" required></b-form-input>
-                            </b-form-group>
-
-                            <b-form-group label="Email">
-                                <b-form-input type="email" v-model="form.email" required></b-form-input>
-                            </b-form-group>
-
-                            <b-form-group label="Message">
-                                <b-form-textarea v-model="form.message" rows="5" required></b-form-textarea>
-                            </b-form-group>
-
-                            <b-button type="submit" variant="primary" class="w-100">
-                                Send Message
-                            </b-button>
-
-                        </b-form>
+                <h2 class="title is-2 has-text-centered mb-6">Our Work</h2>
+                <div class="columns is-multiline">
+                    <div class="column is-4" v-for="project in portfolio" :key="project.id">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img :src="project.image" :alt="project.title">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-4">{{ project.title }}</p>
+                                <p class="subtitle is-6">{{ project.description }}</p>
+                                <button class="button is-outlined is-primary">View Details</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered mb-6">Contact Us</h2>
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <form @submit.prevent="onSubmit">
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" v-model="form.name" required>
+                                </div>
+                            </div>
 
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" v-model="form.email" required>
+                                </div>
+                            </div>
 
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea" v-model="form.message" rows="5" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary is-fullwidth">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer -->
-        <footer class="bg-dark text-light py-4">
-            <div class="container text-center">
+        <footer class="footer has-background-dark has-text-white">
+            <div class="container has-text-centered">
                 <p>&copy; 2024 AdCreative. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="mx-2"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+                <div class="mt-4">
+                    <a href="#" class="mx-2 has-text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="mx-2 has-text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="mx-2 has-text-white"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="mx-2 has-text-white"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </footer>
-
-
     </div>
 </template>
 
-<!-- Script -->
 <script>
-import { data } from 'autoprefixer';
-
 export default {
     name: 'Sandbox',
     data() {
         return {
+            isNavActive: false,
             services: [
                 {
                     id: 1,
@@ -173,28 +187,25 @@ export default {
                 email: '',
                 message: '',
             }
-
         }
     },
     methods: {
-        onSubmit(event) {
-            //TODO: handle form submission
+        onSubmit() {
             console.log('Form submitted:', this.form)
         }
     }
-
 }
-console.table(data);
 </script>
+
 <style>
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/images/Hero-bg-1.png');
     background-size: cover;
     background-position: center;
-    color: white;
 }
 
 .card {
+    height: 100%;
     transition: transform 0.3s ease;
 }
 
@@ -202,22 +213,22 @@ console.table(data);
     transform: translateY(-5px);
 }
 
-.social-links a {
-    color: white;
-    text-decoration: none;
+.footer a {
+    transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: #007bff;
+.footer a:hover {
+    color: #3273dc !important;
+}
+
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 /* Add responsive styles */
-@media (max-width: 768px) {
-    .hero-section {
-        text-align: center;
-    }
-
-    .display-4 {
+@media screen and (max-width: 768px) {
+    .title.is-1 {
         font-size: 2.5rem;
     }
 }

@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import "https://jenil.github.io/bulmaswatch/pulse/bulmaswatch.min.css";
+
+/* Your other styles */
 
 @tailwind base;
 @tailwind components;
@@ -34,6 +37,19 @@
         --input: 220 13% 91%;
         --ring: 262.1 83.3% 57.8%;
         --radius: 0.5rem;
+
+        --success: 142 71% 45%;
+        --success-foreground: 210 20% 98%;
+
+        --warning: 38 92% 50%;
+        --warning-foreground: 210 20% 98%;
+
+        --info: 198 93% 60%;
+        --info-foreground: 210 20% 98%;
+
+        /* Add transition variables for consistency */
+        --transition-speed: 0.3s;
+        --transition-ease: cubic-bezier;
     }
 
     .dark {
@@ -70,9 +86,9 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-  }
+}
 
-  /* Add after your existing styles */
+/* Add after your existing styles */
 .smooth-scroll-section {
     scroll-margin-top: 80px; /* Adjusts for fixed headers */
     scroll-behavior: smooth;
@@ -81,6 +97,13 @@
 /* Custom scroll timing */
 @media (prefers-reduced-motion: no-preference) {
     .smooth-scroll-section {
-        scroll-behavior-duration: 1000ms;
+        scroll-behavior: 1000ms;
+    }
+}
+
+/** For users who prefer reduced motion */
+@media (prefers-feduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }
