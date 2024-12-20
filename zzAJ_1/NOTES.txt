@@ -1,0 +1,48 @@
+Modern Setup
+
+Use Vite instead of Laravel Mix for faster development experience
+Implement Laravel Breeze/Jetstream for quick authentication scaffolding
+Use TypeScript for better type safety
+Implement Tailwind CSS for consistent styling
+Architecture Patterns
+
+Implement Repository Pattern for database operations
+Use Form Request classes for validation
+Create dedicated Service classes for business logic
+Use Resources for API transformations
+Implement View Models for complex view logic
+Performance Optimization
+
+Use persistent layouts in Inertia
+Implement proper code splitting
+Use shared data wisely to avoid redundant requests
+Implement proper caching strategies
+Use debounce/throttle for form submissions
+Development Workflow
+
+Use Laravel Sail for consistent development environments
+Implement proper Git workflow with feature branches
+Use Laravel Pint for code styling
+Implement PHPUnit tests for backend
+Use Vitest for Vue component testing
+Common Gotchas to Avoid
+
+Don't pass too much data through Inertia props
+Handle file uploads properly with proper validation
+Implement proper error handling both frontend and backend
+Use proper date/time handling between backend and frontend
+Implement proper loading states
+Security Best Practices
+
+Implement proper CSRF protection
+Use Laravel Sanctum for API authentication
+Validate all inputs both client and server side
+Implement proper role/permission system
+Use secure headers middleware
+Maintenance and Scalability
+
+Keep dependencies updated
+Follow semantic versioning
+Document API endpoints and components
+Implement proper logging
+Use queue workers for background jobs
