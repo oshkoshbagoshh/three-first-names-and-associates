@@ -6,7 +6,7 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-8 md:mb-0">
                     <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-purple-500 mx-auto md:mx-0">
-                        <img src="../../../public/images/LinkedIn%20Photo.jpg" alt="Profile Picture"
+                        <img src="/public/images/LinkedIn_Photo.jpg" alt="Profile Picture"
                             class="w-full h-full object-cover" />
                     </div>
                 </div>

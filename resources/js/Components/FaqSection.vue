@@ -1,34 +1,41 @@
 <template>
-    <div class="bg-gradient-to-br from-purple-900 to-blue-900 p-8 text-white">
-        <h2 class="text-4xl font-bold text-center mb-8">FAQS</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div v-for="(faq, index) in faqs" :key="index" class="bg-purple-700 rounded-lg overflow-hidden">
-                <div class="bg-purple-600 p-4">
-                    <h3 class="text-xl font-semibold">{{ faq.question }}</h3>
-                </div>
-                <div class="p-4 bg-white text-purple-900">
-                    <p>{{ faq.answer }}</p>
-                </div>
-            </div>
-        </div>
+  <section id="faq" class="mb-8">
+    <h2 class="text-2xl font-rubik font-semibold text-indigo dark:text-blue-violet mb-4">Frequently Asked Questions</h2>
+    <div v-for="(item, index) in faqs" :key="index" class="mb-4">
+      <button @click="toggle(index)" class="w-full text-left p-4 bg-gray-200 dark:bg-gray-700 rounded-lg">
+        {{ item.question }}
+      </button>
+      <transition name="fade">
+        <p v-if="isOpen(index)" class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">{{ item.answer }}</p>
+      </transition>
     </div>
+  </section>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
-const faqs = ref([
-    {
-        question: "What is the advantage of hiring a consultant instead of doing it in-house?",
-        answer: "Having an FAQ section is a great way to present information about your product or service. Using the question-and-answer format makes it more relatable to your users."
-    },
-    {
-        question: "What kind of deliverables are to be expected?",
-        answer: "Having an FAQ section is a great way to present information about your product or service. Using the question-and-answer format makes it more relatable to your users."
-    },
-    {
-        question: "How long will the project take and how long until results can be measured?",
-        answer: "Having an FAQ section is a great way to present information about your product or service. Using the question-and-answer format makes it more relatable to your users."
-    }
-]);
+const faqs = [
+  { question: 'What is CTV advertising?', answer: 'Connected TV advertising refers to ads served on internet-connected devices...' },
+  { question: 'How can I measure success?', answer: 'Success can be measured through various KPIs such as impressions, clicks...' },
+  { question: 'How can I measure success?', answer: 'Success can be measured through various KPIs such as impressions, clicks...' },
+  // Add more FAQs as needed
+];
+
+const openIndex = ref(null);
+
+const toggle = (index) => {
+  openIndex.value = openIndex.value === index ? null : index;
+};
+
+const isOpen = (index) => openIndex.value === index;
 </script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+</style>
