@@ -9,7 +9,9 @@
     {{-- CDN  --}}
 
 
-    <title>Document</title>
+    <title>Document</title>]
+
+
 </head>
 
 <body>
