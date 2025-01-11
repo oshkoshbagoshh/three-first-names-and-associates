@@ -2,19 +2,13 @@
     <main class="container px-4 py-8 mx-auto">
         <HeroSection />
 
-        <section id="tfn-media-services" class="mb-8">
-            <AboutTfnMediaServices />
-        </section>
-        <hr>
-        <section id="tfn-music-services" class="mb-8">
-            <AboutTfnMusicServices />
-        </section>
-        <hr>
+
+
         <!--  HOLDER FOR SERVICES       -->
-        <div>
-            <ServicesSection />
-        </div>
-        <hr>
+        <!-- <div> -->
+        <ServicesSection />
+        <!-- </div> -->
+        <!-- <hr> -->
         <section id="faq" class="mb-8">
             <div>
                 <FaqSection />
@@ -32,7 +26,7 @@
                 <TestimonialsSectionComponent />
             </div>
         </section>
-        <hr>
+
 
         <section id="about" class="mb-8">
             <h2 class="mb-4 text-2xl font-semibold font-rubik text-indigo dark:text-blue-violet">About Us</h2>
@@ -48,7 +42,7 @@
                 traditional TV and CTV is crucial. We help companies navigate the fragmented TV landscape, optimize
                 their ad spend, and gain a competitive edge in the rapidly evolving world of CTV advertising.</p>
         </section>
-        <hr>
+
         <section id="services" class="mb-8">
             <h2 class="mb-4 text-2xl font-semibold font-rubik text-indigo dark:text-blue-violet">Our Services</h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -60,19 +54,18 @@
                 </div>
             </div>
         </section>
-        <hr>
+
         <section id="partnerships" class="mb-8">
+            <!-- TODO: partnerships  -->
             <h2 class="mb-4 text-2xl font-semibold font-rubik text-indigo dark:text-blue-violet">Partnerships</h2>
-            <p>We're proud to partner with Le Moyne Consulting for technical resources and ComplySAM for secure and
-                compliant data handling.</p>
+            <ul>
+                <li>Partner 1 </li>
+                <li>Partner 2 </li>
+                <li>Partner 3 </li>
+            </ul>
+
         </section>
 
-        <section id="music" class="mb-8">
-            <h2 class="mb-4 text-2xl font-semibold font-rubik text-indigo dark:text-blue-violet">TFN Music Services</h2>
-            <p>TFN Music Services offers expert guidance in audio production, mixing, and mastering for CTV and
-                advertisements. We leverage our deep understanding of audio technology and industry standards to ensure
-                your content sounds impeccable across all platforms.</p>
-        </section>
 
 
         <section id="contact" class="mt-8 text-center">
@@ -85,8 +78,6 @@
 
 <script setup>
 import HeroSection from '@/Components/HeroSection.vue'
-import AboutTfnMusicServices from "@/Components/AboutTfnMusicServices.vue"
-import AboutTfnMediaServices from "@/Components/AboutTfnMediaServices.vue"
 import FaqSection from "@/Components/FaqSection.vue"
 import ServicesSection from "@/Components/ServicesSection.vue"
 import AboutNathan from "@/Components/AboutNathan.vue"
