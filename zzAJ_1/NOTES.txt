@@ -283,7 +283,7 @@ public function index(Request $request)
     </b-form>
 
     <!-- Search Results -->
-    <div class="search-results mt-4">
+    <div class="mt-4 search-results">
       <b-card
         v-for="post in posts"
         :key="post.id"
@@ -443,3 +443,6 @@ protected function configureRateLimiting()
 This comprehensive solution provides a robust, scalable blog and admin system with advanced features, focusing on performance, security, and user experience.
 
 Would you like me to elaborate on any specific aspect of the implementation?
+
+=============
+
