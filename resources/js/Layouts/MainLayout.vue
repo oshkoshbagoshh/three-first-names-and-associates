@@ -2,8 +2,8 @@
     <!-- Navigation -->
     <Header />
     <!-- Navigation -->
-    <nav class="bg-gray-100 dark:bg-gray-800 py-4">
-        <div class="container mx-auto px-4 flex items-center justify-between">
+    <nav class="py-4 bg-gray-100 dark:bg-gray-800">
+        <div class="container flex items-center justify-between px-4 mx-auto">
             <!--  HOME LOGO -->
             <LogoHome />
             <ul class="flex justify-center space-x-6">
@@ -12,7 +12,7 @@
                         class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">About</a>
                 </li>
                 <li>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
                     <a @click.prevent="scrollToSection('services')" href="#services"
                         class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">
                         Services
@@ -22,11 +22,11 @@
                     <a @click.prevent="scrollToSection('partnerships')" href="#partnerships"
                         class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">Partnerships</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a @click.prevent="scrollToSection('music')" href="#music"
                         class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">Music
                         Services</a>
-                </li>
+                </li> -->
                 <li>
                     <a @click.prevent="scrollToSection('contact')" href="#contact"
                         class="text-indigo dark:text-blue-violet hover:text-sapphire dark:hover:text-sapphire">Contact</a>

@@ -1,12 +1,13 @@
 <?php
 
-use App\Http\Controllers\FormController;
+// use App\Http\Controllers\FormController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
+// use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
+/*================================ DIVISION ==============================*/
 
 // HOME ROUTE
 Route::get('/', function () {
@@ -16,30 +17,7 @@ Route::get('/', function () {
     ]);
 });
 
-//  SANDBOX / PORTFOLIO VIEW
-Route::get('/sandbox', function () {
-    return Inertia::render('Sandbox');
-});
 
-
-// About Page
-Route::get('/about', function () {
-    return Inertia::render('About');
-});
-
-// Services Page
-Route::get('/services', function () {
-    return Inertia::render('Services');
-});
-
-// Contact Page
-Route::get('/contact', function () {
-    return Inertia::render('Contact');
-});
-
-// Fill out the contact form
-
-Route::post('/submit-form', [FormController::class, 'store'])->name('submit-form');
 
 
 //TODO: Privacy Policy and Terms of Service - own page? if so then links back don't work ....
@@ -49,6 +27,7 @@ Route::get('/privacy-policy', function () {
 });
 
 // Terms of Service Page
+// TODO: terms of service update
 Route::get('/terms-and-conditions', function () {
     return Inertia::render('TermsAndConditions');
 });
