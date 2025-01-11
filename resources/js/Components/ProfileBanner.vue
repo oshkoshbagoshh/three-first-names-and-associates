@@ -6,7 +6,7 @@
         <!-- Profile Image -->
         <div class="w-24 h-24 md:w-32 md:h-32">
           <img
-            src="/profile-image.jpg"
+            src="/public/images/Nathan.jpg"
             alt="Profile"
             class="object-cover w-full h-full rounded-full"
           />
