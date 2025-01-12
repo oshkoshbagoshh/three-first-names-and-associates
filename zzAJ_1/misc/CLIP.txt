@@ -446,5 +446,3 @@ Would you like me to elaborate on any specific aspect of the implementation?
 
 =============
 
-
-Researching another CTV blog site. Takeaways: nice image backdrop as hero, aside bar with tags and categories, a search bar , filter, and then for the singular post, its more of the traditional gutenberg desgn, but at the end we have the Call to action, and quick links. You can comment but need to fill out Name, email, webstie, and comment needs to be approved.
