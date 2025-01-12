@@ -11,7 +11,7 @@ use Inertia\Inertia;
 
 // HOME ROUTE
 Route::get('/', function () {
-    return Inertia::render('Home', [
+    return Inertia::render('Vikings', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('Register'),
     ]);

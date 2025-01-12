@@ -1,19 +1,19 @@
 <template>
-    <main class="container px-4 py-8 mx-auto">
+<!--    <main class="container px-4 py-8 mx-auto"->
         <HeroSection />
 
         <!--  HOLDER FOR SERVICES       -->
         <!-- <div> -->
-        <ServicesSection />
+<!--        <ServicesSection />-->
         <!-- </div> -->
         <!-- <hr> -->
-        <section id="faq" class="mb-8">
+<!--        <section id="faq" class="mb-8">-->
             <div>
                 <FaqSection />
             </div>
         </section>
         <hr />
-        <section id="aboutnathan" class="mb-8">
+<!--        <section id="aboutnathan" class="mb-8">-->
             <div>
                 <AboutNathan />
             </div>
@@ -114,6 +114,7 @@
                 Nihil autem explicabo hic asperiores rerum aut.
             </p>
 
+    <!--     Partners  -->
             <li>Partner 1</li>
             <li>Partner 2</li>
             <li>Partner 3</li>
