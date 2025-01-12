@@ -24,7 +24,7 @@
                         <h2 class="text-xl font-semibold text-gray-800">Company Information</h2>
 
                         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                            <div>
+             `               <div>
                                 <label class="block text-sm font-medium text-gray-700">Company Name</label>
                                 <input type="text" id="companyName" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500" required>
                             </div>
