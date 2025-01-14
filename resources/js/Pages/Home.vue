@@ -1,44 +1,14 @@
 <template>
-<!--&lt;!&ndash;    <main class="container px-4 py-8 mx-auto"->-->
         <HeroSection />
-
-        <!--  HOLDER FOR SERVICES       -->
-        <!-- <div> -->
-        <ServicesSection />
-        <!-- </div> -->
-        <!-- <hr> -->
-<!--        <section id="faq" class="mb-8">-->
 
                 <FaqSection />
 
-        <hr />
-<!--        <section id="aboutnathan" class="mb-8">-->
-            <div>
                 <AboutNathan />
-            </div>
 
-        <hr />
-        <section id="testimonials" class="mb-8">
-            <div>
                 <TestimonialsSectionComponent />
-            </div>
-        </section>
 
-        <section id="about" class="mb-8">
-            <h2
-                class="mb-4 text-2xl font-semibold font-rubik text-indigo dark:text-blue-violet"
-            >
-                About Us
-            </h2>
-            <p>
-                With nearly a decade of experience in media & advertising, Three
-                First Names & Associates is a consulting firm dedicated to
-                helping the ad industry excel in Connected TV (CTV). Our unique
-                perspective spans traditional TV ad sales, distribution, media
-                rights, and the technical intricacies of programmatic
-                advertising for CTV.
-            </p>
-        </section>
+
+
         <hr />
         <section class="mb-8">
             <h2
@@ -151,6 +121,7 @@ import {
 } from "@heroicons/vue/24/outline";
 import CalendlyWidget from "@/Components/CalendlyWidget.vue";
 import ProfileBanner from "@/Components/ProfileBanner.vue";
+import About from '@/Components/About.vue';
 
 const services = [
     {

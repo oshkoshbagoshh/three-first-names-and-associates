@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 
 
-//TODO: Privacy Policy and Terms of Service - own page? if so then links back don't work ....
+// TODO: Privacy Policy and Terms of Service - own page? if so then links back don't work ....
 // Privacy Policy Page
 Route::get('/privacy-policy', function () {
     return Inertia::render('PrivacyPolicy');

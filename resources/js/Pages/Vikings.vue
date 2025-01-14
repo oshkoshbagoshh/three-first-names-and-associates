@@ -49,6 +49,8 @@ tailwind.config = {
           </div>
         </div>
       </div>
+    </nav>
+  </main>
 
 
       <!-- Hero Section with Blobs -->
