@@ -9,7 +9,8 @@
       <div class="flex flex-col items-center gap-12 md:flex-row">
         <!-- Profile Image Container -->
         <div class="md:w-1/3">
-          <div class="relative w-64 h-64 mx-auto overflow-hidden border-4 border-purple-500 rounded-full md:mx-0 group hover:border-purple-400 transition-all duration-300">
+          <div
+              class="relative w-64 h-64 mx-auto overflow-hidden border-4 border-purple-500 rounded-full md:mx-0 group hover:border-purple-400 transition-all duration-300">
             <img
                 :src="profileImage"
                 alt="Profile Picture"
@@ -20,15 +21,15 @@
 
         <!-- Content Section -->
         <div class="md:w-2/3">
-          <div class="p-8 bg-purple-800 rounded-lg bg-opacity-20 backdrop-blur-sm hover:bg-opacity-25 transition-all duration-300">
+          <div
+              class="p-8 bg-purple-800 rounded-lg bg-opacity-20 backdrop-blur-sm hover:bg-opacity-25 transition-all duration-300">
             <p class="text-lg leading-relaxed">
 
-             The pants fights with love, ransack the quarter-deck before it travels.
+              The pants fights with love, ransack the quarter-deck before it travels.
 
               When the corsair laughs for puerto rico, all ships scrape shiny, stormy cannibals.
 
             </p>
-
 
 
             <p class="mt-6 text-lg leading-relaxed">
@@ -56,7 +57,7 @@
                  target="_blank"
                  rel="noopener noreferrer"
                  class="p-2 text-white rounded-full hover:bg-purple-700 transition-colors duration-300">
-                <component :is="social.icon" class="w-6 h-6" />
+                <component :is="social.icon" class="w-6 h-6"/>
               </a>
             </div>
           </div>
@@ -75,7 +76,7 @@ export default {
     return {
       profileImage: '/images/nathan.jpg',
       skills: [
-        'CTV', 'Media Analysis','Client Relations' , 'Business Development', 'Campaign Management', 'Data Analysis', 'Advertising Sales', 'Data Visualization'
+        'CTV', 'Media Analysis', 'Client Relations', 'Business Development', 'Campaign Management', 'Data Analysis', 'Advertising Sales', 'Data Visualization'
       ],
       socialLinks: [
         {

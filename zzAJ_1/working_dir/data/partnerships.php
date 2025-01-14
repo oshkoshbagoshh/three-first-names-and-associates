@@ -34,4 +34,5 @@ function getPartnerships()
     ];
 
     return $partners;
+
 }
