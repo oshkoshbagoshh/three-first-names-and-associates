@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class Testimonial extends Model
 {
@@ -18,7 +18,7 @@ class Testimonial extends Model
         'industry',
         'avatar_url',
         'is_featured',
-        'status'
+        'status',
     ];
 
     protected $casts = [
@@ -43,15 +43,16 @@ class Testimonial extends Model
     }
 
     // Accessors
-    public function getAvatarUrlAttribute($value)
+    public function getAvatarUrlAttribute($value): string
     {
         return $value ?? '/images/default-avatar.png';
     }
 
     // Helper methods
-    public function toggleFeatured()
+    public function toggleFeatured(): void
     {
-        $this->is_featured = !$this->is_featured;
+        $this->is_featured = ! $this->is_featured;
         $this->save();
     }
 }
+
