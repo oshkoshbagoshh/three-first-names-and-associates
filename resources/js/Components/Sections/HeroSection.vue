@@ -28,7 +28,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { gsap } from 'gsap'
-import CallToAction from './CallToAction.vue'
+import CallToAction from '../CallToAction.vue'
 
 const heroImage = ref(null)
 const content = ref(null)

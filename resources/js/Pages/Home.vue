@@ -109,11 +109,11 @@
 </template>
 
 <script setup>
-import HeroSection from "@/Components/HeroSection.vue";
-import FaqSection from "@/Components/FaqSection.vue";
+import HeroSection from "@/Components/Sections/HeroSection.vue";
+import FaqSection from "@/Components/Sections/FaqSection.vue";
 import ServicesSection from "@/Components/ServicesSection.vue";
-import AboutNathan from "@/Components/AboutNathan.vue";
-import TestimonialsSectionComponent from "@/Components/TestimonialsSectionComponent.vue";
+import AboutNathan from "@/Components/Sections/AboutNathan.vue";
+import TestimonialsSectionComponent from "@/Components/Sections/TestimonialsSectionComponent.vue";
 import {
     ChartBarIcon,
     CodeBracketIcon,
@@ -121,7 +121,7 @@ import {
 } from "@heroicons/vue/24/outline";
 import CalendlyWidget from "@/Components/CalendlyWidget.vue";
 import ProfileBanner from "@/Components/ProfileBanner.vue";
-import About from '@/Components/About.vue';
+import About from '@/Components/Sections/About.vue';
 
 const services = [
     {

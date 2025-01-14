@@ -29,7 +29,9 @@
         "pestphp/pest": "^3.4",
         "pestphp/pest-plugin-laravel": "^3.0",
         "league/csv": "^9.21",
-        "barryvdh/laravel-debugbar": "^3.6"
+        "barryvdh/laravel-debugbar": "^3.6",
+      "spatie/laravel-markdown": "@stable",
+        "dompdf/dompdf": "@stable"
     },
     "autoload": {
         "psr-4": {

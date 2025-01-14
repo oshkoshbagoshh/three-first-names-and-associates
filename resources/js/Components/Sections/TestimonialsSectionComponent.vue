@@ -11,7 +11,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import TestimonialCard from './TestimonialCard.vue'
+import TestimonialCard from '../TestimonialCard.vue'
 
 const testimonials = ref([
   {
