@@ -46,11 +46,12 @@ Route::middleware('auth')->group(function () {
 });
 
 
-
+// ====================  comment ==============
 // TODO: add meeting controller
 Route::get('/meeting', [MeetingController::class, 'index'])->name('meeting.index');
 
 
+// ====================  comment ==============
 // TODO: Add admin and auth
 // Admin routes
 Route::middleware(['auth'])->prefix('admin')->group(function () {
@@ -58,10 +59,14 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::resource('posts', AdminPostController::class)->except(['show']);
 });
 
-//TODO: Feature - Chatbot
-//  Botman Route
-Route::post('/botman', 'BotmanController@handle');
-Route::get('/botman', 'BotmanController@startConversation');
+
+
+
+// ====================  comment ==============
+////TODO: Feature - Chatbot
+////  Botman Route
+//Route::post('/botman', 'BotmanController@handle');
+//Route::get('/botman', 'BotmanController@startConversation');
 
 
 require __DIR__ . '/auth.php';
