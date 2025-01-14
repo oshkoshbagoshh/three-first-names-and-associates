@@ -1,23 +1,22 @@
 <template>
-<!--    <main class="container px-4 py-8 mx-auto"->
+<!--&lt;!&ndash;    <main class="container px-4 py-8 mx-auto"->-->
         <HeroSection />
 
         <!--  HOLDER FOR SERVICES       -->
         <!-- <div> -->
-<!--        <ServicesSection />-->
+        <ServicesSection />
         <!-- </div> -->
         <!-- <hr> -->
 <!--        <section id="faq" class="mb-8">-->
-            <div>
+
                 <FaqSection />
-            </div>
-        </section>
+
         <hr />
 <!--        <section id="aboutnathan" class="mb-8">-->
             <div>
                 <AboutNathan />
             </div>
-        </section>
+
         <hr />
         <section id="testimonials" class="mb-8">
             <div>
@@ -136,10 +135,7 @@
             />
         </section>
 
-        <div>
-            <profile-banner />
-        </div>
-    </main>
+
 </template>
 
 <script setup>

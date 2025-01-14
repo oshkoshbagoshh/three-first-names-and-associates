@@ -1,6 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
-import gsap from 'gsap';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -22,9 +21,7 @@ export default {
                 'sapphire': '#0F52BA',
                 'indigo': '#4B0082',
                 'electric-blue': '#51E5FF',
-                'saphire': '#0056BF',
-                'smoky-black': '100B00',
-
+                'smoky-black': '#100B00',
             },
         },
     },

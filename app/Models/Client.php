@@ -5,7 +5,7 @@
  * @Date: 2025-01-11 23:19:18
  * @Last Modified by:   Someone
  * @Last Modified time: 2025-01-11 23:23:03
- * @Description: file:///Users/aj/Herd/tresllamos/app/Models/Clients.php
+ * @Description: file:///Users/aj/Herd/tresllamos/app/Models/Client.php
  */
 
 
@@ -22,7 +22,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Clients extends Model
+class Client extends Model
 {
     /** @use HasFactory<\Database\Factories\ClientFactory> */
     use HasFactory;
