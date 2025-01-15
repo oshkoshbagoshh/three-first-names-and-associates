@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-br from-purple-900 to-blue-900 p-8 text-white">
+  <div class="bg-gradient-to-br from-purple-100 to-blue-900 p-8 text-white">
     <h2 class="text-4xl font-bold text-center mb-4">THREE FIRST NAMES</h2>
     <h3 class="text-2xl font-semibold text-center mb-8">MEDIA SOLUTIONS & MUSIC SERVICES</h3>
 

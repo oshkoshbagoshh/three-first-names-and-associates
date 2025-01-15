@@ -11,7 +11,7 @@
                     <ul class="space-y-2">
                         <li><a href="/" class="hover:text-cyan-300 transition-colors duration-300">Home</a></li>
                         <li><a href="/services" class="hover:text-cyan-300 transition-colors duration-300">Services</a></li>
-                        <li><a href="/about" class="hover:text-cyan-300 transition-colors duration-300">About Us</a></li>
+                        <li><a href="/Sections/About" class="hover:text-cyan-300 transition-colors duration-300">About Us</a></li>
                         <li><a href="/contact" class="hover:text-cyan-300 transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
