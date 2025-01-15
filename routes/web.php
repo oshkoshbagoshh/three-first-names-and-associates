@@ -7,6 +7,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+
 /* ================================ DIVISION ============================== */
 
 // HOME ROUTE
@@ -15,6 +16,12 @@ Route::get('/', function () {
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('Register'),
     ]);
+});
+
+// TODO: 
+// EMPLOYEE SKILL CARD ROUTE:
+Route::get('/nathan', function() {
+    return Inertia::render('NathanScottProfile.vue');
 });
 
 Route::get('/mock', function() {
